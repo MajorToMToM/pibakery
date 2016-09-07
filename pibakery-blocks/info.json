@@ -17,6 +17,7 @@
     "bootbehaviour",
     "changepass",
     "sethostname",
+    "adduser",
     "runcommand",
     "runcommand_as",
     "runpython",

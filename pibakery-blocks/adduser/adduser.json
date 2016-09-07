@@ -1,0 +1,28 @@
+{
+	"name": "addUser",
+	"text": "Add new user\\nUsername: %1\\nBaseDirectory: %2\\nGroups: %3",
+	"script": "addUser.sh",
+	"args": [
+                {
+                        "type": "text",
+                        "default": "newuser",
+                        "maxLength":0
+                },
+		{
+			"type": "text",
+                        "default": "/home/newUser",
+                        "maxLength":0
+		},
+		{
+                        "type": "text",
+			"default": "groups",
+			"maxLength":0
+		}
+	],
+	"network": false,
+	"continue": true,
+	"type": "setting",
+	"category":"setting",
+	"shortDescription":"Create a new user.",
+	"longDescription":"This block allows you to create a new User.\n-> The field 'Username' requires a lowercase string because the addUser command requires this.\n-> The 'BaseDirectory' requires a valid path. If the path is empty no home directory is created.\n-> The 'Groups' value can consist of a string with multiple values seperated by a comma. If no values are defined no groups are added."
+}
