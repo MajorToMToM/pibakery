@@ -18,6 +18,7 @@
     "changepass",
     "sethostname",
     "runcommand",
+    "runcommand_as",
     "runpython",
     "deletefile",
     "reboot",

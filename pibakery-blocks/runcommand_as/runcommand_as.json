@@ -1,0 +1,22 @@
+{
+	"name": "runcommand_as",
+	"text": "Run Command: %1\\nAs user: %2",
+	"script": "runcommand_as.sh",
+	"args": [
+		{
+			"type": "text",
+			"default": "chmod +x /my/script",
+			"maxLength":0
+		},
+		{
+			"type": "text",
+			"default": "root"
+		}
+	],
+	"network": false,
+	"continue": true,
+	"type": "other",
+	"category":"other",
+	"shortDescription":"Run a command as any user. It is important to specify an already existing user.",
+	"longDescription":"This block allows you to enter any command, which will be executed. You can choose which user is executing this command by entering the username. It is important to enter a valid username."
+}
